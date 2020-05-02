@@ -1,0 +1,2 @@
+# Orphanage_Management_System
+Orphanage Management System is an online Web Application through which the user can get details about the available orphanages. The system enables the user to Login/Signup and perform donations, request adoption and book a visit to the orphanage.  There is a provision provided for the admins of the orphanage management system to login and access the details of the donations, adoption requests and bookings done through the system. 
