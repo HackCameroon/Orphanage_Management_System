@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HTN</title>
+<link rel="shortcut icon" href="images/htnp.ico">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+* {
+  box-sizing: border-box;
+  }
+</style>
+
+</head>
+<body>
+
+<header>
+  <img src="images/htn.jpg" align="left" height="125px" width="130px">
+    <h2 style="text-align: center;">Helping the needy!</h2>
+</header>
+
+<section>
+  
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="orphanages.html">Orphanages</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a class="active" href="book.html">Book a visit</a></li>
+      <li><a href="adopt.html">Adopt</a></li>
+      <br>
+      <br>      <br>
+      <br>
+      <br>      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <li><a href="login.html">Log In/Sign Up</a></li>
+      <li><a href="admin.html">Admin's Page</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h2>Book a visit and spend some quality time with Kids!</h2>
+    <form method="post" action="Book">
+      Name: <input type="text" name="name" placeholder="Name Of Visitor" required> <br><br>
+      Phone: <input type="text" name="phone" placeholder="Phone Number" required> <br><br>
+	  E-mail: <input type="text" name="email" placeholder="Mail ID" required> <br><br>
+      Orphanage: <input list="orphanages" name="orphanages" placeholder="Select Orphanage" required>
+      <datalist id="orphanages">
+        <option value="Sri Saradha Sakthi Peetam">
+        <option value="Good Life center">
+        <option value="New Hope New Life Orphanage">
+        <option value="Sai Baba Orphanage">
+        <option value="Annai Teresa Orphanage">
+      </datalist> <br><br>
+      Select Date: <input type="date" name="date"> <br><br>
+      Select Time: <input type="time" name="time"> <br><br>
+      Approx no. of persons: <input type="text" name="no" required>
+	  <br>
+      <br>
+      <input type="submit" value="Book">    
+      <input type="reset" value="Reset">
+    </form>  
+  </article>
+
+</section>
+
+<footer>
+  <img align="center" src="images/instafb.png" width="200" alt="Follow Us!" usemap="#instafb">
+  <map name="instafb">
+    <area shape="rect" coords="8,2,100,85" href="https://www.instagram.com/htnpeople/">
+    <area shape="rect" coords="125,8,200,85" href="https://www.facebook.com/htnpeople/">
+  </map>
+
+</footer>
+
+</body>
+</html>

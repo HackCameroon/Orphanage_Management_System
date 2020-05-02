@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HTN</title>
+<link rel="shortcut icon" href="images/htnp.ico">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+input[type=text] {
+  width: 200px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('images/search.png');
+  background-position: 10px 10px; 
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.5s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+  <img src="images/htn.jpg" align="left" height="125px" width="130px">
+    <h2 style="text-align: center;">Helping the needy!</h2>
+</header>
+
+<section>
+  
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a class="active" href="orphanages.html">Orphanages</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="book.html">Book a visit</a></li>
+      <li><a href="adopt.html">Adopt</a></li>
+      <br>      <br>
+      <br>
+      <br>      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <li><a href="login.html">Log In/Sign Up</a></li>
+      <li><a href="admin.html">Admin's Page</a></li>
+    </ul>
+  </nav>
+
+  <article>
+
+    <form>
+      <input type="text" name="search" placeholder="Search Orphanage">
+    </form>
+
+<br>
+<br>
+
+    <div class="gallery">
+      <a href="http://www.sspeetam.org/home.html">
+        <img src="images/sssp.jpg" width="600" height="400">
+      </a>
+      <div class="desc">Sri Saradha Sakthi Peetam Orphanage</div>
+    </div>
+
+    <div class="gallery">
+      <a href="http://www.goodlifecentre.org/">
+        <img src="images/glc.jpg" width="600" height="400">
+      </a>
+      <div class="desc">Good Life Center Orphanage</div>
+    </div>
+
+    <div class="gallery">
+      <a href="http://www.givenewhopeandnewlife.com/">
+        <img src="images/nhnl.jpg" width="600" height="400">
+      </a>
+    <div class="desc">New Hope and New Life Oorphanage</div>
+  </div>
+  </article>
+
+</section>
+
+<footer>
+  <img align="center" src="images/instafb.png" width="200" alt="Follow Us!" usemap="#instafb">
+  <map name="instafb">
+    <area shape="rect" coords="8,2,100,85" href="https://www.instagram.com/htnpeople/">
+    <area shape="rect" coords="125,8,200,85" href="https://www.facebook.com/htnpeople/">
+  </map>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HTN</title>
+<link rel="shortcut icon" href="images/htnp.ico">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 410px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+<script src="js/login.js"></script>
+
+<script>
+ function signupvalidation()
+ {
+    var name = document.forms["signupForm"]["name"];               
+    var email = document.forms["signupForm"]["email"];    
+    var phone = document.forms["signupForm"]["phone"];  
+    var password = document.forms["signupForm"]["pwd"]; 
+   
+    if (name.value == "")                                  
+    { 
+        window.alert("Please enter your name."); 
+        name.focus(); 
+        return false; 
+    } 
+          
+    if (email.value == "")                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf("@", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf(".", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (phone.value == "")                           
+    { 
+        window.alert("Please enter your telephone number."); 
+        phone.focus(); 
+        return false; 
+    } 
+   
+    if (password.value == "")                        
+    { 
+        window.alert("Please enter your password"); 
+        password.focus(); 
+        return false; 
+    }
+}   
+</script>
+</head>
+<body>
+
+<header>
+  <img src="images/htn.jpg" align="left" height="125px" width="130px">
+    <h2 style="text-align: center;">Helping the needy!</h2>
+</header>
+
+<section>
+  
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="orphanages.html">Orphanages</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="book.html">Book a visit</a></li>
+      <li><a href="adopt.html">Adopt</a></li>
+      <br>
+      <br>      <br>
+      <br>
+      <br>      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <li><a class="active" href="login.html">Log In/Sign Up</a></li>
+      <li><a href="admin.html">Admin's Page</a></li>
+    </ul>
+  </nav>
+
+  <article>
+
+<div class="row">
+  <div class="column">
+
+
+	<form action="Userlogin" method="post">
+		<table width="40%">
+		 <h2>Log In</h2>
+				<tr>
+				<td><font size="4">E-mail:</font></td>
+				<td>
+				<input type="text" placeholder="" name="uname" required></td>
+				</tr>
+				
+				<tr>
+				<td><font size="4">Password:</font></td>
+				<td>
+				<input type="password" placeholder="" name="psw" required></td>
+				</tr>
+				<tr>
+				<td><input type="submit" value="Login"/></td>
+				<td><input type="reset" value="Reset"></td>
+				</td>
+		</table>
+	</form>
+	
+</div>
+
+  <div class="column">
+    <h2>Sign Up</h2>
+    <form name="signupForm" method="post" action="Register" >
+    <table width="30%" bgcolor="" align="left">
+
+    <tr>
+    <td><font size="4">Name:</font></td>
+    <td><input type="text" size=25 name="name"></td>
+    </tr>
+    
+    <tr>
+    <td><font size="4">E-mail:</font></td>
+    <td><input type="text" size=25 name="email"></td>
+    </tr>
+
+    <tr>
+    <td><font size="4">Phone:</font></td>
+    <td><input type="text" size=25 name="phone"></td>
+    </tr>
+
+    <tr>
+    <td><font size="4">Password:</font></td>
+    <td><input type="Password" size=25 name="pwd"></td>
+    </tr>
+    
+    <tr>
+    <td><input type="Reset"></td>
+    <td><input type="submit" onclick="return signupvalidation()" value="Create"></td>
+    </tr>
+
+  </table>
+  </form>
+
+  </div>
+</div>
+  </article>
+
+</section>
+
+<footer>
+  <img align="center" src="images/instafb.png" width="200" alt="Follow Us!" usemap="#instafb">
+  <map name="instafb">
+    <area shape="rect" coords="8,2,100,85" href="https://www.instagram.com/htnpeople/">
+    <area shape="rect" coords="125,8,200,85" href="https://www.facebook.com/htnpeople/">
+  </map>
+
+</footer>
+
+</body>
+</html>
